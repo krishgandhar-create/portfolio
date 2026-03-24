@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #f0f0f0;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: #1a1a1a;
+    }
+    nav .logo { font-size: 22px; font-weight: bold; color: #a78bfa; }
+    nav ul { list-style: none; display: flex; gap: 30px; }
+    nav ul a { color: #f0f0f0; text-decoration: none; font-size: 15px; }
+    nav ul a:hover { color: #a78bfa; }
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 { font-size: 52px; margin-bottom: 16px; }
+    .hero h1 span { color: #a78bfa; }
+    .hero p { font-size: 18px; color: #aaa; max-width: 500px; margin: 0 auto 30px; }
+    .btn {
+      background: #a78bfa;
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .btn:hover { background: #7c3aed; }
+    .section { padding: 80px 60px; }
+    .section h2 { font-size: 32px; margin-bottom: 40px; border-left: 4px solid #a78bfa; padding-left: 16px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 28px;
+      border: 1px solid #2a2a2a;
+    }
+    .card h3 { margin-bottom: 10px; color: #a78bfa; }
+    .card p { color: #aaa; font-size: 14px; line-height: 1.6; }
+    .about p { color: #aaa; font-size: 16px; line-height: 1.8; max-width: 700px; }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #1a1a1a;
+      color: #555;
+      font-size: 14px;
+    }
+  .skills-list { max-width: 600px; display: flex; flex-direction: column; gap: 20px; }
+.skill-label { display: flex; justify-content: space-between; margin-bottom: 6px; font-size: 15px; }
+.skill-bar { background: #2a2a2a; border-radius: 20px; height: 10px; }
+.skill-fill { height: 10px; background: #a78bfa; border-radius: 20px;
+  animation: grow 1.2s ease-out; }
+@keyframes grow { from { width: 0; } }</style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Krishan Kumar</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Hi, I'm <span>Krishan Kumar</span></h1>
+    <p>BBA student | Aspiring Business Analyst | CAT 2027 Aspirant.</p>
+    <a href="#projects" class="btn">See My Work</a>
+  </section>
+
+  <section class="section about" id="about">
+    <h2>About Me</h2>
+    <p>I am krishan kumar, i am BBA first year student passionate about Business analytics and Data science. Athough General BBA gives me exposure to a lot of different domains but Business analytics is what i like most around to be.</p>
+  </section>
+<section class="section" id="skills">
+  <h2>Skills</h2>
+  <div class="skills-list">
+
+    <div class="skill">
+      <div class="skill-label"><span>Excel</span><span>75%</span></div>
+      <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-label"><span>Python</span><span>40%</span></div>
+      <div class="skill-bar"><div class="skill-fill" style="width: 40%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-label"><span>Business Analytics</span><span>60%</span></div>
+      <div class="skill-bar"><div class="skill-fill" style="width: 60%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-label"><span>Data Analysis</span><span>50%</span></div>
+      <div class="skill-bar"><div class="skill-fill" style="width: 50%"></div></div>
+    </div>
+
+  </div>
+</section>
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Project One</h3>
+        <p>A short description of this project and what it does.</p>
+      </div>
+      <div class="card">
+        <h3>Project Two</h3>
+        <p>A short description of this project and what it does.</p>
+      </div>
+      <div class="card">
+        <h3>Project Three</h3>
+        <p>A short description of this project and what it does.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p style="color:#aaa;">Feel free to reach out at <a href="mailto:Krishgandhar@gmail.com" style="color:#a78bfa;">krishgandhar@mail.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2026 Krishan Kumar. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
